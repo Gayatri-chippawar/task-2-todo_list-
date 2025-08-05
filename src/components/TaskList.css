@@ -1,0 +1,75 @@
+.task-container {
+  width: 100%;
+}
+
+.task-item {
+  background-color: #fff;
+  border-left: 5px solid #F57C00;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* ✅ allow wrapping */
+  gap: 10px;
+  width: 100%;
+}
+
+.task-title {
+  flex: 1;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+  word-break: break-word; /* ✅ handle long words */
+  min-width: 0; /* helps flex:1 work properly */
+}
+
+.task-delete-btn {
+  background-color: #E53935;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap; /* ✅ prevents button text wrap */
+  margin-bottom: 20px;
+}
+
+.task-delete-btn:hover {
+  background-color: #C62828;
+}
+
+
+
+
+
+.comments {
+  margin-top: 12px;
+}
+
+.comments input {
+  margin-top: 16px;
+  padding: 6px;
+  margin-right: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.comments button {
+  padding: 6px 12px;
+  background-color: #F57C00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comments button:hover {
+  background-color: #E65100;
+}
